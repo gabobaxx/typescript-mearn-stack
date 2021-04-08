@@ -1,4 +1,4 @@
-# Videos App With Typescript and React
+# Videos App With Typescript and React 🚀
 
 This app was built with typescript for the api and react with typescript for the backend.
 You can add a new video with a: 
