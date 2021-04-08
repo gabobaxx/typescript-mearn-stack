@@ -1,0 +1,28 @@
+@uri = http://localhost:5000
+@id = 606c832fecf0891462334931
+
+GET {{uri}}/videos
+
+### create a video
+POST {{uri}}/videos
+Content-Type: application/json
+
+{
+	"title": "Sitio Web conHTML, CSS y Javascript",
+	"description": "Video de prueba de fazt creado",
+	"url": "https://www.youtube.com/watch?v=Q2imkhmhOFo"
+}
+
+### get only one video
+GET {{uri}}/videos/{{id}}
+
+### update a video
+PUT {{uri}}/videos/{{id}}
+Content-Type: application/json
+
+{
+	"description": "Video de prueba de fazt actualizado"
+}
+
+### delete a video
+DELETE {{uri}}/videos/{{id}}
